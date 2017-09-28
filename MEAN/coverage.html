@@ -1,0 +1,28 @@
+    <section class="suite">
+      <h1>controllers.api.posts</h1>
+      <dl>
+        <section class="suite">
+          <h1>GET/api/posts</h1>
+          <dl>
+mongodb connected
+            <dt>has 3 posts</dt>
+            <dd><pre><code>api.get(&#x27;/api/posts&#x27;)
+    .expect(200)
+    .expect(function (response){
+        expect(response.body).to.have.length(3)
+    })
+    .end(done)</code></pre></dd>
+          </dl>
+        </section>
+        <section class="suite">
+          <h1>/POST /api/posts</h1>
+          <dl>
+            <dt>added 1 new post</dt>
+            <dd><pre><code>Post.findOne(function(err,post){
+    expect(post.body).to.equal(&#x27;this is my new post&#x27;)
+    done(err)
+})</code></pre></dd>
+          </dl>
+        </section>
+      </dl>
+    </section>

@@ -1,0 +1,22 @@
+{
+  "name": "social-app",
+  "dependencies": {
+    "angular": "~1.2.21",
+    "angular-mocks": "~1.2.21",
+    "angular-route": "~1.2.21"
+  },
+  "authors": [
+    "Ian M Felschow <Ian.M.Felschow@aexp.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
