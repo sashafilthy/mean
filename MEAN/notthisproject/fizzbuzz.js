@@ -16,6 +16,7 @@ function fizzBuzz(length, fizzNumber, buzzNumber){
             output+=i;
         }
         console.log(output);
+
     }
 }
 
