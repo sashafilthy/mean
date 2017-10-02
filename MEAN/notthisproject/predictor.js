@@ -6,7 +6,7 @@ var i=0;
     var startingWins = wins;
     var losses = losses;
     var totalGames = wins + losses;
-    var targetPct = targetPct +"%";
+    var targetPct = targetPct;
 
 
     console.log("Starting Wins "+wins);
@@ -19,7 +19,7 @@ var i=0;
     while(i != -1){
         var iar = 0;
 
-        if(wins/totalGames < 0.66){
+        if(wins/totalGames < targetPct){
             wins++;
             totalGames++;
             console.log("Current Wins "+wins);
@@ -27,13 +27,13 @@ var i=0;
             console.log("Current Record: "+wins+" - "+losses);
             console.log("Win Pct: "+wins/totalGames);
             console.log("Current Games "+totalGames);
-            console.log("Need to Win More Games to reach "+targetPct);
+            console.log("Need to Win More Games to reach "+targetPct*100+"%");
             console.log("__________________");
         }
         else {
 
             iar = wins-startingWins;
-            console.log("CONGRATS ON "+targetPct+"!!!")
+            console.log("CONGRATS ON "+targetPct*100+"%!!!");
             console.log("You need to win "+iar+" in a row");
             i=-1;
         }
@@ -44,4 +44,4 @@ var i=0;
 
 }
 
-predict(22,33,0.66);
+predict(3,3,0.66);
